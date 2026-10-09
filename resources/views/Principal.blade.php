@@ -1,5 +1,6 @@
 <x-header>
-  <x-slot>
+  <x-slot name="titulo">
+    {{$titulo}}
 </x-slot>
 </x-header>
   <div class="container">
