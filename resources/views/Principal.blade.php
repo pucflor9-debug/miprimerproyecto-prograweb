@@ -7,7 +7,7 @@
       <h1>Vista Principal</h1>
 {{$mensaje}}
 @isset($mensaje)
-<p>Existe variable 1</p
+<p>Existe variable 1</p>
 @endisset
 
 <h3>{{$mensaje}}</h3>

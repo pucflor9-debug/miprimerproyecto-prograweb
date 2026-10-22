@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -23,5 +23,7 @@ return "Mostrando el mensaje: {$id}";
 
 Route::get('/contact', function(){
 $nombre="Flor Fabiola puc balam";
-return view('contact', ['nombre'=>$nombre, 'carrera'=>'Administracion en tecnologias de informacion']);
+return view('contact',['nombre'=>$nombre,'carrera'=>'Administracion en tecnologias de informacion']);
 })->name('contact');
+
+Route::get('/empresa',[HomeController::class,'empresa'])->name('empresa');
