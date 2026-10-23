@@ -33,7 +33,7 @@ class Pagina extends Model
             'is_active'=>'boolean'
         ];
     }
- 
+  
     protected function name():Attribute{
         return Attribute::make(
             set: function($value){//Mutador
